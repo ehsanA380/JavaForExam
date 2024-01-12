@@ -8,5 +8,6 @@ public class inputAsString {
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
         System.out.println(str);
+        sc.close();
     }
 }

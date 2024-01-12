@@ -30,6 +30,7 @@ public class gettingUserInput {
 
         String line = sc.nextLine();
         System.out.println(line);
+        sc.close();
 
 
     }
