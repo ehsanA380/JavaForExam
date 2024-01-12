@@ -28,10 +28,7 @@ class ehs {
 
     public static void main(String[] args) { 
         ehs music = new ehs("ehsan e");
-        
-        
-        
-
+    
         music.playMusic();
     }
 }
