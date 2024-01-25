@@ -1,0 +1,50 @@
+
+import java.util.Scanner;
+class me{
+    /*me(){
+        System.out.print("I am calling while out class object are created.");
+    }
+    me(String name){
+        System.out.println("your are "+name);
+    }
+    */
+    void printName(String name){
+        System.out.println("your name is "+name);
+    }
+    boolean checkArmstrongNumber(int num){
+        int c,r,sum=0;
+        c=num;
+        while(c>0){
+            r=c%10;
+            sum = sum*10+r;
+            c=c/10;
+        }
+        if(sum==num){
+            return true;
+        }
+        return false;
+    }
+}
+
+
+
+public class Main{
+    public static void main(String[] args){
+        String RESET = "\u001B[0m";
+        String RED = "\u001B[31m";
+        String GREEN = "\u001B[32m";
+        String YELLOW = "\u001B[33m";
+        System.out.print(RED+"Enter your name: "+RESET);
+        Scanner sc = new Scanner(System.in);
+        String name = sc.nextLine();
+        me m= new me();
+        m.printName(YELLOW+name+RESET);
+        if(m.checkArmstrongNumber(12222221)){
+            System.out.println("armstrong number");
+        }
+        else{
+            System.out.println("not armstrong ");
+        }
+        // m.me();
+    }
+}
